@@ -8,7 +8,7 @@
 
 <hr>
 </div>
-    <h2 align="center" style="color: #3decff">🇫ontes</h1>
+    <h2 align="center">🇫ontes</h1>
 </div>
 
 Antes de prosseguir, é necessário instalar as seguintes fontes:
@@ -40,10 +40,10 @@ O restante das fontes devem ser baixadas e instaladas manualmente:
     ```
 
 <div>
-    <h1 align="center" style="color:green"> Polybar</h2>
+    <h1 align="center"> Polybar</h2>
 </div>
 
-Essa é a configuração padrão da Polybar após a instalação:
+Essa é a aparência padrão da Polybar após a instalação:
 
 ![](https://raw.githubusercontent.com/polybar/polybar/master/doc/_static/default.png)
 
