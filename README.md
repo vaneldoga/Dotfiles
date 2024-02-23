@@ -3,11 +3,9 @@
 
 ⚠️ O resultado final foi graças a configurações e tutoriais que eu achei online. Portanto, buscarei atribuir os devidos créditos, identificando cada autor com sua contribuição específica.
 
-###   Resultado final:
-
 ---
 
-## fontes 
+# fontes 
 
 Antes de prosseguir, é necessário instalar as seguintes fontes:
 - Iosevka Nerd Font
@@ -37,6 +35,6 @@ O restante das fontes devem ser baixadas e instaladas manualmente:
     fc-cache -fv
     ```
 
-## Programas Necessários
+# Programas Necessários
 
 xclip, maim, feh, picom, polybar
