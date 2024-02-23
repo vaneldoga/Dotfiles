@@ -1,5 +1,5 @@
 <Div align="center">
-    <div align="center" style="border: 1px solid #000; height:100%; width: 100%">
+    <div align="center" style="border: 1px solid #0001; height:100%; width: 100%">
         <h1 align="center">⚙️ Dotfiles</h1>
     </div>
 <p>📝 Instruções para personalização do Debian 12 com i3wm.</p>
@@ -8,7 +8,7 @@
 
 <hr>
 </div>
-    <h1 align="center">Título</h1>
+    <h2 align="center">Fontes</h1>
 </div>
 
 Antes de prosseguir, é necessário instalar as seguintes fontes:
