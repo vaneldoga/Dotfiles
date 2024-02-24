@@ -8,7 +8,7 @@
 
 <hr>
 </div>
-    <h2 align="center">🇫ontes</h1>
+    <h2 align="center">🟡 Fontes</h1>
 </div>
 
 Antes de prosseguir, é necessário instalar as seguintes fontes:
@@ -40,13 +40,30 @@ O restante das fontes devem ser baixadas e instaladas manualmente:
     ```
 
 <div>
-    <h1 align="center"> Polybar</h2>
+    <h2 align="center">🔴 Polybar</h2>
 </div>
 
 Essa é a aparência padrão da Polybar após a instalação:
 
 ![](https://raw.githubusercontent.com/polybar/polybar/master/doc/_static/default.png)
 
+Primeiro faça a instalação padrão do [Polybar](https://github.com/polybar/polybar) e depois instale os [temas](https://github.com/adi1090x/polybar-themes)
+
+Executar um tema:
+```
+.config/polybar/launch.sh --theme
+```
+substitua _**theme**_ pelo tema que você deseja aplicar.
+
+Atualmente estou utilizando uma versão modificada do tema 'hacker'.
+Caso queira utilizá-la, basta substituir a pasta 'hacker' deste repositório pela pasta padrão, localizada em: ~/.config/polybar.
+
+Iniciar o Polybar junto com o sistema:
+
+Edite o arquivo ~/.config/i3/config, e adicione o seguinte:
+```
+exec --no-startup-id exec .config/polybar/launch.sh --hack
+```
 
 # Programas Necessários
 
