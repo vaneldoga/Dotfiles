@@ -4,8 +4,6 @@
     </div>
 <p>📝 Instruções para personalização do Debian 12 com i3wm.</p>
 
-<p>⚠️ O resultado final foi graças a configurações e tutoriais que eu achei online. Portanto, buscarei atribuir os devidos créditos, identificando cada autor com sua contribuição específica.</p>
-
 <hr>
 </div>
     <h2 align="center">Fontes</h1>
