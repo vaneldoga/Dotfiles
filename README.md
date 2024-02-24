@@ -219,7 +219,7 @@ bindsym $mod+Shift+d exec --no-startup-id dmenu_run
     <h2 align="center">Extras</h2>
 </div>
 
-#### Touchpad:
+### Touchpad:
 Edite o arquivo **/etc/X11/xorg.conf.d/90-touchpad.conf**:
 ```
 Section "InputClass"
@@ -232,7 +232,7 @@ Section "InputClass"
 EndSection
 ```
 
-#### Captura de tela:
+### Captura de tela:
 ```
 $ sudo apt install maim xclip copyq
 ```
@@ -250,7 +250,7 @@ bindsym Ctrl+$mod+Print exec --no-startup-id maim --format=png --window $(xdotoo
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
 ```
 
-#### Controle de brilho:
+### Controle de brilho:
 ```
 $ sudo apt install brightnessctl
 ```
@@ -262,7 +262,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 ```
 
-#### i3lock manual mas personalizado:
+### i3lock manual mas personalizado:
 ```
 $ sudo apt install scrot
 ```
@@ -272,7 +272,7 @@ $ sudo apt install scrot
 bindsym $mod+Shift+Escape exec scrot -e 'convert $f -blur 4x4 $f && i3lock -i $f && rm $f'
 ```
 
-#### Launcher de app (favoritos):
+### Launcher de app (favoritos):
 ```
 $ sudo apt install gnome-pie
 ```
@@ -280,7 +280,7 @@ Depois de instalado, basta adicionar os programas mais usados.
 
 O atalho desse programa pode ser alterado diretamente nas suas configurações, não precisa especificar uma keybind no arquivo de configuração do i3.
 
-#### Espaçamento e bordas coloridas
+### Espaçamento e bordas coloridas
 Edite da forma que achar melhor!
 
 ~/.config/i3/config:
