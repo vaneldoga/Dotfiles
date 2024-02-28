@@ -232,7 +232,7 @@ Section "InputClass"
 EndSection
 ```
 
-### Captura de tela:
+### Screenshot:
 ```
 $ sudo apt install maim xclip copyq
 ```
