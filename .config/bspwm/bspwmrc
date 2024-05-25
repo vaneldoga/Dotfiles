@@ -1,0 +1,36 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# Default 1 monitor with 6 workspaces
+for monitor in $(xrandr -q | grep -w 'connected' | cut -d' ' -f1); do
+    bspc monitor "$monitor" -d '1' '2' '3' '4' '5'
+done
+
+
+bspc config border_width         3
+bspc config window_gap          9
+
+# Borders and gaps
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+# Border colors
+bspc config normal_border_color "#484848"
+bspc config focused_border_color "#00ff00"
+bspc config urgent_border_color "#B58900"
+bspc config presel_border_color "#26E2FF"
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+#AUTOSTART
+#
+sxhkd &
+dunst &
+/home/vanel/.config/polybar/launch.sh --grayblocks &
+nitrogen --restore &
+dunst &
+picom &
+#/home/vanel/Desktop/picom.sh &

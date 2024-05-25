@@ -50,8 +50,8 @@ configuration {
     gradient-19:                 linear-gradient(0, #03001e, #7303c0, #ec38bc, #fdeff9);
     gradient-20:                 linear-gradient(0, #780206, #061161);
     
-    background-window:           white;
-    background-normal:           white/100%;
+    background-window:           var(gradient-6);
+    background-normal:           white/10%;
     background-selected:         white/20%;
     foreground-normal:           white;
     foreground-selected:         white;
@@ -59,12 +59,12 @@ configuration {
 
 /*****----- Main Window -----*****/
 window {
-    transparency:                "false";
+    transparency:                "real";
     location:                    center;
     anchor:                      center;
     fullscreen:                  true;
     cursor:                      "default";
-    background-image:            none;
+    background-image:            var(background-window);
 }
 
 /*****----- Main Box -----*****/
@@ -72,17 +72,17 @@ mainbox {
     enabled:                     true;
     spacing:                     var(mainbox-spacing);
     margin:                      var(mainbox-margin);
-    background-color:            black;
+    background-color:            transparent;
     children:                    [ "dummy", "userimage", "inputbar", "listview", "message", "dummy" ];
 }
 
 /*****----- User -----*****/
 userimage {
     margin:                      0px 400px;
-    border:                      0px;
-    border-radius:               0px;
+    border:                      2px;
+    border-radius:               100%;
     border-color:                white;
-    background-color:            black;
+    background-color:            transparent;
     background-image:            url("~/.config/rofi/images/user.jpeg", both);
 }
 
@@ -94,13 +94,13 @@ inputbar {
 }
 
 dummy {
-    background-color:            black;
+    background-color:            transparent;
 }
 
 prompt {
     enabled:                     true;
     font:                        var(prompt-font);
-    background-color:            black;
+    background-color:            transparent;
     text-color:                  var(foreground-normal);
 }
 
@@ -110,13 +110,13 @@ message {
     margin:                      var(message-margin);
     padding:                     var(message-padding);
     border-radius:               var(message-border-radius);
-    background-color:            transparent;
-    text-color:                  green;
+    background-color:            var(background-normal);
+    text-color:                  var(foreground-normal);
 }
 textbox {
     font:                        var(textbox-font);
-    background-color:            black;
-    text-color:                  green;
+    background-color:            transparent;
+    text-color:                  inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
 }
@@ -136,7 +136,7 @@ listview {
     fixed-columns:               true;
     
     spacing:                     var(listview-spacing);
-    background-color:            blue;
+    background-color:            transparent;
     cursor:                      "default";
 }
 
@@ -145,19 +145,19 @@ element {
     enabled:                     true;
     padding:                     var(element-padding);
     border-radius:               var(element-border-radius);
-    background-color:            black;
+    background-color:            var(background-normal);
     text-color:                  var(foreground-normal);
     cursor:                      pointer;
 }
 element-text {
     font:                        var(element-text-font);
-    background-color:            blue;
+    background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            transparent;
+    background-color:            var(background-selected);
     text-color:                  var(foreground-selected);
 }

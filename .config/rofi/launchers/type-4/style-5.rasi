@@ -11,7 +11,7 @@
 configuration {
 	modi:                       "drun";
     show-icons:                 true;
-    display-drun:               "drun";
+    display-drun:               "search ->";
     display-run:                "";
     display-filebrowser:        "";
     display-window:             "";
@@ -56,7 +56,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       600px;
+    width:                       400px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -91,9 +91,9 @@ inputbar {
     margin:                      0px;
     padding:                     0px;
     border:                      0px 0px 1px 0px;
-    border-radius:               0px;
+    border-radius:               12px;
     border-color:                @alternate-background;
-    background-color:            @background-colour;
+    background-color:            transparent;
     text-color:                  @foreground-colour;
     children:                    [ "prompt", "entry" ];
 }
@@ -102,22 +102,22 @@ prompt {
     enabled:                     true;
     padding:                     15px;
     border:                      0px 1px 0px 0px;
-    border-radius:               0px;
+    border-radius:               12px;
     border-color:                @alternate-background;
-    background-color:            inherit;
+    background-color:            transparent;
     text-color:                  inherit;
 }
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
     str:                         "::";
-    background-color:            inherit;
+    background-color:            transparent;
     text-color:                  inherit;
 }
 entry {
     enabled:                     true;
     padding:                     15px;
-    background-color:            inherit;
+    background-color:            transparent;
     text-color:                  inherit;
     cursor:                      text;
     placeholder:                 "";
@@ -140,9 +140,9 @@ listview {
     spacing:                     0px;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
-    border-radius:               0px;
-    border-color:                @border-colour;
+    border:                      2px solid;
+    border-radius:               12px;
+    border-color:                green;
     background-color:            transparent;
     text-color:                  @foreground-colour;
     cursor:                      "default";
@@ -180,7 +180,7 @@ element normal.active {
     text-color:                  var(active-foreground);
 }
 element selected.normal {
-    background-color:            var(alternate-background);
+    background-color:            green;
     text-color:                  var(foreground-colour);
 }
 element selected.urgent {
@@ -258,7 +258,7 @@ message {
 textbox {
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               12px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;

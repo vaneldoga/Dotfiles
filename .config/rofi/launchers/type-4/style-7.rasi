@@ -52,7 +52,7 @@ configuration {
 /*****----- Main Window -----*****/
 window {
     /* properties for window widget */
-    transparency:                true;
+    transparency:                "real";
     location:                    center;
     anchor:                      center;
     fullscreen:                  true;
@@ -65,11 +65,11 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px;
+    border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-colour;
     cursor:                      "default";
-    background-color:            transparent;
+    background-color:            @background-colour;
 }
 
 /*****----- Main Box -----*****/
@@ -80,7 +80,7 @@ mainbox {
     padding:                     25% 35%;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
-    border-color:                blue;
+    border-color:                @border-colour;
     background-color:            transparent;
     children:                    [ "inputbar", "listview" ];
 }
@@ -92,9 +92,9 @@ inputbar {
     margin:                      0px;
     padding:                     20px;
     border:                      0px;
-    border-radius:               0px;
-    border-color:                blue;
-    background-color:            transparent;
+    border-radius:               20px;
+    border-color:                @border-colour;
+    background-color:            @alternate-background;
     text-color:                  @foreground-colour;
     children:                    [ "entry" ];
 }
@@ -141,7 +141,7 @@ listview {
     border:                      0px solid;
     border-radius:               20px;
     border-color:                @border-colour;
-    background-color:            black/80%;
+    background-color:            @alternate-background;
     text-color:                  @foreground-colour;
     cursor:                      "default";
 }
@@ -159,7 +159,7 @@ element {
     margin:                      0px;
     padding:                     8px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               12px;
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
